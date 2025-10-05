@@ -43,7 +43,7 @@ PHPは開始タグ(`<?php`)と終了タグ(`?>`)の間にコードを記載し�
 
 このリポジトリでは、説明のため出力を多用します。
 ```php
-- echo "Hello" . PHP_EOL;
+echo "Hello" . PHP_EOL;
 ```
 
 [⬆︎目次に戻る](#目次)
@@ -854,4 +854,6 @@ foreach (xrange(0, 1000, 50) as $number) {
     echo $number . ", ";
 }
 ```
+
+[⬆︎目次に戻る](#目次)
 
