@@ -7,9 +7,11 @@
 定義済みの〇〇:
 [Template](#Template)
 
-関数:
-[Template](#Template) 
 -->
+
+関数:
+[数学関数](/functions/math/README.md)、
+[String関数](/functions/strings/README.md)
 
 ## 目次
 
