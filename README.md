@@ -6,12 +6,14 @@
 <!-- 
 定義済みの〇〇:
 [Template](#Template)
-
 -->
 
 関数:
 [数学関数](/functions/math/README.md)、
-[String関数](/functions/strings/README.md)
+[String関数](/functions/strings/README.md)、
+[配列関数](/functions/array/README.md)、
+[クラス関数／オブジェクト関数](/functions/classobj/README.md)、
+[CType関数](/functions/ctype/README.md)
 
 ## 目次
 
