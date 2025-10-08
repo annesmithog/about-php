@@ -1,28 +1,5 @@
 # about-php
 
-執筆における注意点: 
-- [PHPUnitについて](/docs/phpunit/README.md)
-
-定義済み:
-- [変数](/predefined/variables/README.md)
-- [例外](/predefined/exceptions/README.md)
-- [インターフェース／クラス](/predefined/interfaces/README.md)
-- [アトリビュート](/predefined/attributes/README.md)
-
-関数:
-- [数学関数](/functions/math/README.md) - 数学に関わる関数
-- [String関数](/functions/strings/README.md) - 文字列に関わる関数
-- [配列関数](/functions/array/README.md) - 配列に関わる関数
-- [クラス関数／オブジェクト関数](/functions/classobj/README.md) - クラスやオブジェクトに関わる関数
-- [CType関数](/functions/ctype/README.md) - 文字種を分類する関数
-
-応用:
-- OOP
-- SOLID
-- デザインパターン
-- CRUD
-- DB
-
 ## 目次
 
 - [前提](#前提)
@@ -40,6 +17,9 @@
 - [名前空間](#名前空間)
 - [例外](#例外)
 - [ジェネレータ](#ジェネレータ)
+- [Extra](#extra)
+
+[⬆︎目次トップに戻る](#目次)
 
 ## 前提
 
@@ -869,3 +849,10 @@ foreach (xrange(0, 1000, 50) as $number) {
 
 [⬆︎目次に戻る](#目次)
 
+## Extra
+
+- [応用](/advanced/README.md) - SOLID原則、デザインパターン、CRUD、DBなど
+- [定義済み](/predefined/README.md) - 定義済みの変数、例外、インターフェース／クラなど
+- [関数](/functions/README.md) - 数学関数、String関数、配列関数など
+
+[⬆︎目次に戻る](#目次)
