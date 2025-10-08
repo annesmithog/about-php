@@ -3,10 +3,12 @@
 執筆における注意点: 
 [PHPUnitについて](/docs/phpunit/README.md)
 
-<!-- 
-定義済みの〇〇:
-[Template](#Template)
--->
+定義済み:
+[変数](/predefined/variables/README.md)
+[]()
+[]()
+[]()
+
 
 関数:
 [数学関数](/functions/math/README.md)、
