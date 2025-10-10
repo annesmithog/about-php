@@ -18,6 +18,7 @@
 - [例外](#例外)
 - [ジェネレータ](#ジェネレータ)
 - [Extra](#extra)
+- [アルゴリズム](#アルゴリズム)
 
 [⬆︎目次トップに戻る](#目次)
 
@@ -854,5 +855,42 @@ foreach (xrange(0, 1000, 50) as $number) {
 - [応用](/advanced/README.md) - SOLID原則、デザインパターン、CRUD、DBなど
 - [定義済み](/predefined/README.md) - 定義済みの変数、例外、インターフェース／クラなど
 - [関数](/functions/README.md) - 数学関数、String関数、配列関数など
+
+
+[⬆︎目次に戻る](#目次)
+
+## アルゴリズム
+
+探索
+- [線形探索](/src/algorithms/search/linear_search.php) - 配列を先頭から順に探索する
+- [二分探索](/src/algorithms/search/binary_search.php) - ソート済みの配列で中央を基準に分割しながら探索する
+- [指数探索](/src/algorithms/search/exponential_search.php) - ソート済みの配列で小さな範囲を指数的に探索し二分探索する
+- [貪欲法 (例: コイン問題)](/src/algorithms/search/greedy_law.php) - 局所的に最適な選択を繰り返し、全体としての最適解を目指し探索する
+--------------------------------------------------------------------------------------------------
+ツリー
+- [幅優先探索 (BFS)](/src/algorithms/tree/bfs.php) - キューを使ってレベルごとに探索する
+- [深さ優先探索 (DFS)](/src/algorithms/tree/dfs.php) - スタックまたは再帰を使いできる限り深く探索する
+--------------------------------------------------------------------------------------------------
+グラフアルゴリズム
+- [BFSを使用した迷路探索](/src/algorithms/graph/bfs_maze.php) - BFSを使用し、最短経路を見つける
+- [DFSを使用した迷路探索](/src/algorithms/graph/dfs_maze.php) - DFSを使用し、経路を見つける
+- [ダイクストラ法](/src/algorithms/graph/dijkstra.php) - 単一始点の最短経路を見つける (負の辺がない場合のみ使用可能)
+- [ベルマンフォード法](/src/algorithms/graph/bellman_ford.php) - 単一始点の最短経路を見つける (重み付きグラフ使用のため負の辺がある場合も問題なし)
+- [ワーシャル–フロイド法](/src/algorithms/graph/floyd_warshall.php) - 全てのペアの最短経路を見つける
+- [プリム法](/src/algorithms/graph/prim.php) - 最小全域木を求める貪欲法アルゴリズム
+- [クラスカル法](/src/algorithms/graph/kruskal.php) - 最小全域木を求める
+- [トポロジカルソート](/src/algorithms/graph/topological_sort.php) - 有向非循環グラフにおいて、ノードを線形に並べる
+--------------------------------------------------------------------------------------------------
+ソート
+- [バブルソート](/src/algorithms/sorting/bubble_sort.php) - 隣接要素を比較し、入れ替えながら徐々にソート
+- [選択ソート](/src/algorithms/sorting/selection_sort.php) - 最小(または最大)値を見つけ、先頭と交換する
+- [挿入ソート](/src/algorithms/sorting/insertion_sort.php) - 挿入位置を見つけ、部分的にソートされた配列に要素を挿入
+- [ヒープソート](/src/algorithms/sorting/heapify.php) - ヒープを使い効率的にソート
+- [マージソート](/src/algorithms/sorting/merge_sort.php) - 分割統治法に基づく安定ソート
+- [クイックソート](/src/algorithms/sorting/quick_sort.php) - 分割統治法による高速な不安定ソート
+- [シェルソート](/src/algorithms/sorting/shell_sort.php) - 増加間隔の挿入ソートによる効率化
+- [カウントソート](/src/algorithms/sorting/count_sort.php) - 数値範囲が限定された場合に有効な非比較ソート
+- [基数ソート](/src/algorithms/sorting/radix_sort.php) - 整数を各桁ごとに処理する効率的な安定ソート
+--------------------------------------------------------------------------------------------------
 
 [⬆︎目次に戻る](#目次)
