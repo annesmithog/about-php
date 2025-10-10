@@ -18,6 +18,7 @@
 - [例外](#例外)
 - [ジェネレータ](#ジェネレータ)
 - [Extra](#extra)
+- [データ構造](#データ構造)
 - [アルゴリズム](#アルゴリズム)
 
 [⬆︎目次トップに戻る](#目次)
@@ -855,6 +856,21 @@ foreach (xrange(0, 1000, 50) as $number) {
 - [応用](/advanced/README.md) - SOLID原則、デザインパターン、CRUD、DBなど
 - [定義済み](/predefined/README.md) - 定義済みの変数、例外、インターフェース／クラスなど
 - [関数](/functions/README.md) - 数学関数、String関数、配列関数など
+
+[⬆︎目次に戻る](#目次)
+
+## データ構造
+
+- [SplDoublyLinkedList](/datastructures/spldoublelinkedlist/README.md) - 双方向リンクリスト
+- [SplStack](/datastructures/splstack/README.md) - スタック
+- [SplQueue](/datastructures/splqueue/README.md) - キュー
+- [SplPriorityQueue](/datastructures/splpriorityqueue/README.md) - 優先順位付きキュー
+- [SplHeap](/datastructures/splheap/README.md) - ヒープ
+- [SplMaxHeap](/datastructures/splmaxheap/README.md) - 最大値を先頭に保つヒープ
+- [SplMinHeap](/datastructures/splminheap/README.md) - 最小値を先頭に保つヒープ
+- [SplFixedArray](/datastructures/splfixedarray/README.md) - 手動リサイズ必須且つ整数値で指定した範囲内の添字しか使用できない配列
+- [ArrayObject](/datastructures/arrayobject/README.md) - 配列
+- ~~[SplObjectStorage]() - オブジェクトをデータに対応させ、データを渡さずにオブジェクトセットとして使用できるデータ構造~~
 
 [⬆︎目次に戻る](#目次)
 
