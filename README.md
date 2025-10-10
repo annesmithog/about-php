@@ -888,7 +888,7 @@ foreach (xrange(0, 1000, 50) as $number) {
 - [マージソート](/src/algorithms/sorting/merge_sort.php) - 分割統治法を使用した安定ソート
 - [クイックソート](/src/algorithms/sorting/quick_sort.php) - 分割統治法を使用した不安定だが高速なソート
 - [シェルソート](/src/algorithms/sorting/shell_sort.php) - 挿入ソートを改良し、間隔を縮めながら整列させるソート
-- [カウントソート](/src/algorithms/sorting/count_sort.php) - 値の範囲が限られている時に有効な非比較ソート
+- [カウントソート](/src/algorithms/sorting/counting_sort.php) - 値の範囲が限られている時に有効な非比較ソート
 - [基数ソート](/src/algorithms/sorting/radix_sort.php) - 整数の各桁ごとに処理する安定ソート
 --------------------------------------------------------------------------------------------------
 
