@@ -3,7 +3,7 @@
 namespace Src\Algorithms\Sorting;
 
 /**
- * 挿入位置を見つけ、部分的にソートされた配列に要素を挿入
+ * 適切な位置を見つけて要素を挿入し、部分的に整列させるソート
  */
 function insertion_sort(array $arr): array {
     $n = count($arr);

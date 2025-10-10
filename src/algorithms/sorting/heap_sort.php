@@ -3,7 +3,7 @@
 namespace Src\Algorithms\Sorting;
 
 /**
- * ヒープを使い効率的にソート
+ * ヒープ構造を利用し、効率的に整列させるソート
  */
 function heap_sort(array $arr): array {
     $n = count($arr);

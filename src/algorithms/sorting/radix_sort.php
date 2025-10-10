@@ -3,7 +3,7 @@
 namespace Src\Algorithms\Sorting;
 
 /**
- * 整数を各桁ごとに処理する効率的な安定ソート
+ * 整数の各桁ごとに処理する安定ソート
  */
 function radix_sort(array $arr): array {
     if (empty($arr)) return [];

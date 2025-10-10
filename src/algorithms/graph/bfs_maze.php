@@ -6,7 +6,7 @@ use Exception;
 use SplQueue;
 
 /**
- * BFSを使用した迷路探索
+ * BFSを使い、最短経路を見つける
  */
 function bfs_maze(array $maze, int $height, int $width): int {
     $start = null;

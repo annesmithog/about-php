@@ -3,7 +3,7 @@
 namespace Src\Algorithms\Sorting;
 
 /**
- * 数値範囲が限定された場合に有効な非比較ソート
+ * 値の範囲が限られている時に有効な非比較ソート
  */
 function counting_sort(array $arr): array {
     if (empty($arr)) return [];

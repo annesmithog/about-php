@@ -3,7 +3,7 @@
 namespace Src\Algorithms\Search;
 
 /**
- * 貪欲法 (例: コイン問題)
+ * その場で最適な選択を繰り返し解を求める (例: コイン問題)
  */
 function greedy_coin_change(int $amount, array $coins): array {
     rsort($coins);

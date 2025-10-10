@@ -5,7 +5,7 @@ namespace Src\Algorithms\Graph;
 use Exception;
 
 /**
- * DFSを使用した迷路探索
+ * DFSを使い、到達可能な経路を見つける
  */
 function dfs_maze(array $maze, int $height, int $width): int {
     $start = null;

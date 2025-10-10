@@ -3,7 +3,7 @@
 namespace Src\Algorithms\Search;
 
 /**
- * ソート済みの配列で中央を基準に分割しながら探索する
+ * ソート済みの配列を二分しながら効率的に要素を探す
  */
 function binary_search(array $arr, int $target): int {
     $left = 0;

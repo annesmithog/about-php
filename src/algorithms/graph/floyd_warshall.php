@@ -3,7 +3,7 @@
 namespace Src\Algorithms\Graph;
 
 /**
- * 全てのペアの最短経路を見つける
+ * 全ての頂点間の最短経路を求める
  */
 function floyd_warshall(array $dist): array {
     $vertices = array_keys($dist);
@@ -18,15 +18,5 @@ function floyd_warshall(array $dist): array {
             }
         }
     }
-
     return $dist;
 }
-
-$matrix = [
-    [0,   3, INF, 7],
-    [8,   0, 2,   INF],
-    [5, INF, 0,   1],
-    [2, INF, INF, 0],
-];
-
-print_r(floyd_warshall($matrix));

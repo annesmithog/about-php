@@ -5,7 +5,7 @@ namespace Src\Algorithms\Graph;
 use Exception;
 
 /**
- * 有向非循環グラフにおいて、ノードを線形に並べる
+ * 有向非巡回グラフのノードを依存関係に従って並べる
  */
 function topological_sort(array $graph): array {
     $inDegree = [];
@@ -36,12 +36,3 @@ function topological_sort(array $graph): array {
 
     return $order;
 }
-
-$dag = [
-    "数学基礎" => ["線形代数", "微積分"],
-    "線形代数" => ["機械学習"],
-    "微積分"   => ["機械学習"],
-    "機械学習" => [],
-];
-
-print_r(topological_sort($dag));

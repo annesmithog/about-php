@@ -3,7 +3,7 @@
 namespace Src\Algorithms\Search;
 
 /**
- * ソート済みの配列で小さな範囲を指数的に探索し二分探索する
+ * ソート済みの配列で範囲を指数的に広げながら二分探索し要素を探す
  */
 function exponential_search(array $arr, int $target): int {
     $n = count($arr);

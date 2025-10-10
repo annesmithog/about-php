@@ -3,7 +3,7 @@
 namespace Src\Algorithms\Sorting;
 
 /**
- * 分割統治法による高速な不安定ソート
+ * 分割統治法を使用した不安定だが高速なソート
  */
 function quick_sort(array $arr): array {
     if (count($arr) < 2) return $arr;

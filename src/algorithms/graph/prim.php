@@ -3,7 +3,7 @@
 namespace Src\Algorithms\Graph;
 
 /**
- * 最小全域木を求める貪欲法アルゴリズム
+ * 貪欲方で最小全域木を求める
  */
 function prim(array $graph, string $start): array {
     $mst = [];
@@ -30,12 +30,3 @@ function prim(array $graph, string $start): array {
 
     return $mst;
 }
-
-$graphMST = [
-    "A" => ["B" => 1, "C" => 3],
-    "B" => ["A" => 1, "C" => 1, "D" => 6],
-    "C" => ["A" => 3, "B" => 1, "D" => 4],
-    "D" => ["B" => 6, "C" => 4],
-];
-
-print_r(prim($graphMST, "A"));

@@ -3,7 +3,7 @@
 namespace Src\Algorithms\Sorting;
 
 /**
- * 隣接要素を比較し、入れ替えながら徐々にソート
+ * 隣り合う要素を比較し、必要に応じて入れ替えを繰り返すソート
  */
 function bubble_sort(array $arr): array {
     $n = count($arr);

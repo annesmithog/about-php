@@ -2,6 +2,9 @@
 
 namespace Src\Algorithms\Graph;
 
+/**
+ * 辺が小さい順に選び最小全域木を求める
+ */
 function kruskal(array $edges, array $vertices): array {
     sort($edges);
     $parent = [];
@@ -27,17 +30,5 @@ function kruskal(array $edges, array $vertices): array {
             $mst[] = [$u, $v, $w];
         }
     }
-
     return $mst;
 }
-
-$edgesMST = [
-    [1, "A", "B"],
-    [3, "A", "C"],
-    [1, "B", "C"],
-    [6, "B", "D"],
-    [4, "C", "D"],
-];
-$verticesMST = ["A","B","C","D"];
-
-print_r(kruskal($edgesMST, $verticesMST));

@@ -3,7 +3,7 @@
 namespace Src\Algorithms\Sorting;
 
 /**
- * 増加間隔の挿入ソートによる効率化
+ * 挿入ソートを改良し、間隔を縮めながら整列させるソート
  */
 function shell_sort(array $arr): array {
     $n = count($arr);

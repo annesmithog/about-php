@@ -3,7 +3,7 @@
 namespace Src\Algorithms\Sorting;
 
 /**
- * 分割統治法に基づく安定ソート
+ * 分割統治法を使用した安定ソート
  */
 function merge_sort(array $arr): array {
     if (count($arr) <= 1) return $arr;

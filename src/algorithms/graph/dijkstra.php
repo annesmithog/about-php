@@ -5,7 +5,7 @@ namespace Src\Algorithms\Graph;
 use SplPriorityQueue;
 
 /**
- * 単一始点の最短経路を見つける (負の辺がない場合のみ使用可能)
+ * 単一の始点から各頂点への最短経路を求める (負の辺がない場合のみ)
  */
 function dijkstra(array $graph, string $start): array {
     $dist = [];

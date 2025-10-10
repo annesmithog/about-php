@@ -5,7 +5,7 @@ namespace Src\Algorithms\Graph;
 use Exception;
 
 /**
- * 単一始点の最短経路を見つける (重み付きグラフ使用のため負の辺がある場合も問題なし)
+ * 単一の始点から各頂点への最短経路を求める (負の辺があっても問題ないが、負閉路は不可)
  */
 function bellman_ford(array $edges, array $vertices, string $start): array {
     $dist = [];

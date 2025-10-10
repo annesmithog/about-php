@@ -3,7 +3,7 @@
 namespace Src\Algorithms\Tree;
 
 /**
- * 幅優先探索 (BFS)
+ * キューを使い、根から近い順に探索する
  */
 function bfs(array $graph, string $start): array {
     $visited = [];
