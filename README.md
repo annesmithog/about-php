@@ -856,41 +856,40 @@ foreach (xrange(0, 1000, 50) as $number) {
 - [定義済み](/predefined/README.md) - 定義済みの変数、例外、インターフェース／クラなど
 - [関数](/functions/README.md) - 数学関数、String関数、配列関数など
 
-
 [⬆︎目次に戻る](#目次)
 
 ## アルゴリズム
 
 探索
-- [線形探索](/src/algorithms/search/linear_search.php) - 配列を先頭から順に探索する
-- [二分探索](/src/algorithms/search/binary_search.php) - ソート済みの配列で中央を基準に分割しながら探索する
-- [指数探索](/src/algorithms/search/exponential_search.php) - ソート済みの配列で小さな範囲を指数的に探索し二分探索する
-- [貪欲法 (例: コイン問題)](/src/algorithms/search/greedy_law.php) - 局所的に最適な選択を繰り返し、全体としての最適解を目指し探索する
+- [線形探索](/src/algorithms/search/linear_search.php) - 配列を先頭から順番に調べて目的の要素を探す
+- [二分探索](/src/algorithms/search/binary_search.php) - ソート済みの配列を二分しながら効率的に要素を探す
+- [指数探索](/src/algorithms/search/exponential_search.php) - ソート済みの配列で範囲を指数的に広げながら二分探索し要素を探す
+- [貪欲法 (例: コイン問題)](/src/algorithms/search/greedy_coin_change.php) - その場で最適な選択を繰り返し解を求める
 --------------------------------------------------------------------------------------------------
 ツリー
-- [幅優先探索 (BFS)](/src/algorithms/tree/bfs.php) - キューを使ってレベルごとに探索する
-- [深さ優先探索 (DFS)](/src/algorithms/tree/dfs.php) - スタックまたは再帰を使いできる限り深く探索する
+- [幅優先探索 (BFS)](/src/algorithms/tree/bfs.php) - キューを使い、根から近い順に探索する
+- [深さ優先探索 (DFS)](/src/algorithms/tree/dfs.php) - スタックや再帰を使い、できる限り深く探索する
 --------------------------------------------------------------------------------------------------
 グラフアルゴリズム
-- [BFSを使用した迷路探索](/src/algorithms/graph/bfs_maze.php) - BFSを使用し、最短経路を見つける
-- [DFSを使用した迷路探索](/src/algorithms/graph/dfs_maze.php) - DFSを使用し、経路を見つける
-- [ダイクストラ法](/src/algorithms/graph/dijkstra.php) - 単一始点の最短経路を見つける (負の辺がない場合のみ使用可能)
-- [ベルマンフォード法](/src/algorithms/graph/bellman_ford.php) - 単一始点の最短経路を見つける (重み付きグラフ使用のため負の辺がある場合も問題なし)
-- [ワーシャル–フロイド法](/src/algorithms/graph/floyd_warshall.php) - 全てのペアの最短経路を見つける
-- [プリム法](/src/algorithms/graph/prim.php) - 最小全域木を求める貪欲法アルゴリズム
-- [クラスカル法](/src/algorithms/graph/kruskal.php) - 最小全域木を求める
-- [トポロジカルソート](/src/algorithms/graph/topological_sort.php) - 有向非循環グラフにおいて、ノードを線形に並べる
+- [BFSを使用した迷路探索](/src/algorithms/graph/bfs_maze.php) - BFSを使い、最短経路を見つける
+- [DFSを使用した迷路探索](/src/algorithms/graph/dfs_maze.php) - DFSを使い、到達可能な経路を見つける
+- [ダイクストラ法](/src/algorithms/graph/dijkstra.php) - 単一の始点から各頂点への最短経路を求める (負の辺がない場合のみ)
+- [ベルマンフォード法](/src/algorithms/graph/bellman_ford.php) - 単一の始点から各頂点への最短経路を求める (負の辺があっても問題ないが、負閉路は不可)
+- [ワーシャル–フロイド法](/src/algorithms/graph/floyd_warshall.php) - 全ての頂点間の最短経路を求める
+- [プリム法](/src/algorithms/graph/prim.php) - 貪欲方で最小全域木を求める
+- [クラスカル法](/src/algorithms/graph/kruskal.php) - 辺が小さい順に選び最小全域木を求める
+- [トポロジカルソート](/src/algorithms/graph/topological_sort.php) - 有向非巡回グラフのノードを依存関係に従って並べる
 --------------------------------------------------------------------------------------------------
 ソート
-- [バブルソート](/src/algorithms/sorting/bubble_sort.php) - 隣接要素を比較し、入れ替えながら徐々にソート
-- [選択ソート](/src/algorithms/sorting/selection_sort.php) - 最小(または最大)値を見つけ、先頭と交換する
-- [挿入ソート](/src/algorithms/sorting/insertion_sort.php) - 挿入位置を見つけ、部分的にソートされた配列に要素を挿入
-- [ヒープソート](/src/algorithms/sorting/heapify.php) - ヒープを使い効率的にソート
-- [マージソート](/src/algorithms/sorting/merge_sort.php) - 分割統治法に基づく安定ソート
-- [クイックソート](/src/algorithms/sorting/quick_sort.php) - 分割統治法による高速な不安定ソート
-- [シェルソート](/src/algorithms/sorting/shell_sort.php) - 増加間隔の挿入ソートによる効率化
-- [カウントソート](/src/algorithms/sorting/count_sort.php) - 数値範囲が限定された場合に有効な非比較ソート
-- [基数ソート](/src/algorithms/sorting/radix_sort.php) - 整数を各桁ごとに処理する効率的な安定ソート
+- [バブルソート](/src/algorithms/sorting/bubble_sort.php) - 隣り合う要素を比較し、必要に応じて入れ替えを繰り返すソート
+- [選択ソート](/src/algorithms/sorting/selection_sort.php) - 未ソート部分から最小または最大の要素を選び、先頭と交換するソート
+- [挿入ソート](/src/algorithms/sorting/insertion_sort.php) - 適切な位置を見つけて要素を挿入し、部分的に整列させるソート
+- [ヒープソート](/src/algorithms/sorting/heap_sort.php) - ヒープ構造を利用し、効率的に整列させるソート
+- [マージソート](/src/algorithms/sorting/merge_sort.php) - 分割統治法を使用した安定ソート
+- [クイックソート](/src/algorithms/sorting/quick_sort.php) - 分割統治法を使用した不安定だが高速なソート
+- [シェルソート](/src/algorithms/sorting/shell_sort.php) - 挿入ソートを改良し、間隔を縮めながら整列させるソート
+- [カウントソート](/src/algorithms/sorting/count_sort.php) - 値の範囲が限られている時に有効な非比較ソート
+- [基数ソート](/src/algorithms/sorting/radix_sort.php) - 整数の各桁ごとに処理する安定ソート
 --------------------------------------------------------------------------------------------------
 
 [⬆︎目次に戻る](#目次)
