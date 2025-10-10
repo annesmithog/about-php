@@ -1,11 +1,11 @@
 <?php
 
-require_once __DIR__ . "/../../../src/algorithms/search/greedy_law.php";
+require_once __DIR__ . "/../../../src/algorithms/search/greedy_coin_change.php";
 
 use PHPUnit\Framework\TestCase;
 use function Src\Algorithms\Search\greedy_coin_change;
 
-class GreedyLawTest extends TestCase {
+class GreedyCoinChangeTest extends TestCase {
     public function testExactAmount() {
         $coins = [500, 100, 50, 10, 5, 1];
         $result = greedy_coin_change(888, $coins);
