@@ -853,7 +853,7 @@ foreach (xrange(0, 1000, 50) as $number) {
 ## Extra
 
 - [応用](/advanced/README.md) - SOLID原則、デザインパターン、CRUD、DBなど
-- [定義済み](/predefined/README.md) - 定義済みの変数、例外、インターフェース／クラなど
+- [定義済み](/predefined/README.md) - 定義済みの変数、例外、インターフェース／クラスなど
 - [関数](/functions/README.md) - 数学関数、String関数、配列関数など
 
 [⬆︎目次に戻る](#目次)
